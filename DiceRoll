@@ -5,19 +5,20 @@
 using namespace std;
 
 int main() {
+
+    
     int n = 10; 
     int i;
-    int r;
-    srand(time(NULL)); 
+    int key;
     
     priority_queue<int> pq; 
     
 
     cout << "Rolling the dice " << n << " times:\n";
     for (i = 1; i <= n; i++) {
-        r = rand() % 6 + 1; // Get a number between 1 and 6
-        pq.push(r);
-        cout << r << " ";
+        key = rand() % 6 + 1; // Get a number between 1 and 6
+        pq.push(key);
+        cout << key << " ";
     }
     cout << endl;
 
